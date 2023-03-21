@@ -15,6 +15,8 @@ public class VeggiePizza extends Pizza {
         this.ingredientFactory = ingredientFactory;
     }
 
+    
+
     void prepare() {
         System.out.println("Preparing " + name);
         dough = ingredientFactory.createDough();
@@ -23,4 +25,3 @@ public class VeggiePizza extends Pizza {
         veggies = ingredientFactory.createVeggies();
     }
 }
-git i

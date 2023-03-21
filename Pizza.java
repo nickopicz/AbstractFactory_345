@@ -23,6 +23,7 @@ public abstract class Pizza {
 
     void box() {
         System.out.println("Place pizza in official PizzaStore box");
+        System.out.println("========================================");
     }
 
     void setName(String name) {
@@ -30,7 +31,7 @@ public abstract class Pizza {
     }
 
     String getName() {
-        return name;
+        return this.name;
     }
 
     public String toString() {
