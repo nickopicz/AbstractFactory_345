@@ -1,6 +1,6 @@
-public class Order {
+public class Main {
     public static void main(final String[] args) throws Exception {
-        
+
         PizzaStore nyStore = new NYPizzaStore();
 
         PizzaStore chicagoStore = new ChicagoPizzaStore();
