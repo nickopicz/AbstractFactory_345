@@ -1,3 +1,5 @@
+import Pizzas.Pizza;
+
 public abstract class PizzaStore {
 
     public Pizza orderPizza(String type) {

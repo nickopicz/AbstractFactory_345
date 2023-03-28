@@ -1,27 +1,27 @@
-import Ingredients.Dough;
-import Ingredients.Sauce;
-import Ingredients.Cheese;
-import Ingredients.Clam;
+package Pizzas;
+import sauces.Sauce;
+import Factories.PizzaIngredientFactory;
+import Pizzas.Ingredients.Cheese;
+import doughs.Dough;
 
 
-public class ClamPizza extends Pizza {
+public class CheesePizza extends Pizza {
     // To make a pizza now, we need a factory to provide the ingredients.
     PizzaIngredientFactory ingredientFactory;
     Dough dough;
     Sauce sauce;
     Cheese cheese;
-    Clam clam;
+
 
     // class gets a factory
-    public ClamPizza(PizzaIngredientFactory ingredientFactory) {
+    public CheesePizza(PizzaIngredientFactory ingredientFactory) {
         this.ingredientFactory = ingredientFactory;
     }
 
-    void prepare() {
-        System.out.println("Preparing " + name);
+    public void prepare() {
+        System.out.println("Preparing ");
         dough = ingredientFactory.createDough();
         sauce = ingredientFactory.createSauce();
         cheese = ingredientFactory.createCheese();
-        clam = ingredientFactory.createClam();
     }
 }

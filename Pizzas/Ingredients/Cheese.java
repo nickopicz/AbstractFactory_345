@@ -1,4 +1,4 @@
-package Ingredients;
+package Pizzas.Ingredients;
 
 public class Cheese {
     

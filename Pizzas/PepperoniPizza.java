@@ -1,7 +1,9 @@
-import Ingredients.Sauce;
-import Ingredients.Dough;
-import Ingredients.Pepperoni;
-import Ingredients.Cheese;
+package Pizzas;
+import doughs.Dough;
+import sauces.Sauce;
+import Factories.PizzaIngredientFactory;
+import Pizzas.Ingredients.Cheese;
+import Pizzas.Ingredients.Pepperoni;
 
 public class PepperoniPizza extends Pizza {
     PizzaIngredientFactory ingredientFactory;
@@ -15,7 +17,7 @@ public class PepperoniPizza extends Pizza {
         this.ingredientFactory = ingredientFactory;
     }
 
-    void prepare() {
+    public void prepare() {
         System.out.println("Preparing " + name);
         dough = ingredientFactory.createDough();
         sauce = ingredientFactory.createSauce();

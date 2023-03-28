@@ -1,9 +1,17 @@
+import Factories.ChicagoPizzaFactory;
+import Factories.PizzaIngredientFactory;
+import Pizzas.CheesePizza;
+import Pizzas.ClamPizza;
+import Pizzas.PepperoniPizza;
+import Pizzas.Pizza;
+import Pizzas.VeggiePizza;
+
 public class ChicagoPizzaStore extends PizzaStore {
 
     protected Pizza createPizza(String item) {
         Pizza pizza = null;
 
-        PizzaIngredientFactory ingredientFactory = new PizzaIngredientFactory();
+        PizzaIngredientFactory ingredientFactory = new ChicagoPizzaFactory(); 
 
         if (item.equals("cheese")) {
             pizza = new CheesePizza(ingredientFactory);

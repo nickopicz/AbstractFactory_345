@@ -1,4 +1,4 @@
-package Ingredients;
+package doughs;
 
 public class Dough {
     

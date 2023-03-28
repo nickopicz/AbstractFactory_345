@@ -1,4 +1,4 @@
-package Ingredients;
+package sauces;
 
 public class Sauce {
     

@@ -1,7 +1,9 @@
-import Ingredients.Veggies;
-import Ingredients.Sauce;
-import Ingredients.Dough;
-import Ingredients.Cheese;
+package Pizzas;
+import doughs.Dough;
+import sauces.Sauce;
+import Factories.PizzaIngredientFactory;
+import Pizzas.Ingredients.Cheese;
+import Pizzas.Ingredients.Veggies;
 
 public class VeggiePizza extends Pizza {
     PizzaIngredientFactory ingredientFactory;
@@ -9,7 +11,7 @@ public class VeggiePizza extends Pizza {
     Dough dough;
     Sauce sauce;
     Cheese cheese;
-    Veggies veggies;
+    Veggies[] veggies;
 
     public VeggiePizza(PizzaIngredientFactory ingredientFactory) {
         this.ingredientFactory = ingredientFactory;
@@ -17,7 +19,7 @@ public class VeggiePizza extends Pizza {
 
     
 
-    void prepare() {
+    public void prepare() {
         System.out.println("Preparing " + name);
         dough = ingredientFactory.createDough();
         sauce = ingredientFactory.createSauce();

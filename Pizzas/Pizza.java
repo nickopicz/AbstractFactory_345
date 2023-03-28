@@ -1,7 +1,8 @@
-import Ingredients.Cheese;
-import Ingredients.Dough;
-import Ingredients.Sauce;
-import Ingredients.Clam;
+package Pizzas;
+import sauces.Sauce;
+import Pizzas.Ingredients.Cheese;
+import Pizzas.Ingredients.Clam;
+import doughs.Dough;
 
 public abstract class Pizza {
     // each pizza has a name and ingredients
@@ -11,22 +12,22 @@ public abstract class Pizza {
     Cheese cheese;
     Clam clam;
 
-    abstract void prepare();
+    public abstract void prepare();
 
-    void bake() {
-        System.out.println("Bake for 25 minutes at 350");
+    public void bake() {
+    System.out.println("Bake for 25 minutes at 350");
     }
 
-    void cut() {
+    public void cut() {
         System.out.println("Cutting the pizza into diagonal slices");
     }
 
-    void box() {
+    public void box() {
         System.out.println("Place pizza in official PizzaStore box");
         System.out.println("========================================");
     }
 
-    void setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
