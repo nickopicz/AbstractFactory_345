@@ -16,18 +16,26 @@ import sauces.Sauce;
 
 public class NYPizzaIngredientFactory implements PizzaIngredientFactory{
     public Dough createDough() {
+        System.out.println("Rolling out some ThinCrust Dough");
+
         return new ThinCrustDough();
     }
 
     public Cheese createCheese() {
+        System.out.println("sprinkling some good ol Parmeggiano Reggiano.");
+
         return new ReggianoCheese();
     }
 
     public Sauce createSauce() {
+        System.out.println("Marinara it up!");
+
         return new MarinaraSauce();
     }
 
     public Veggies[] createVeggies() {
+        System.out.println("Yum, Veggies.");
+
         Veggies veggies[] = {
                 new Garlic(), new Onion(), new Mushroom(), new RedPepper()
         };
@@ -35,11 +43,15 @@ public class NYPizzaIngredientFactory implements PizzaIngredientFactory{
     }
 
     public Pepperoni createPepperoni() {
+        System.out.println("Gonna throw on a few pepperoners on here!");
+
         return new Pepperoni();
 
     }
 
     public Clam createClam() {
+        System.out.println("Yum, Clams");
+
         return new Clam();
     }
 }

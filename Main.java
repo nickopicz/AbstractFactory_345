@@ -3,14 +3,12 @@ public class Main {
 
         PizzaStore nyStore = new NYPizzaStore();
 
-        PizzaStore chicagoStore = new ChicagoPizzaStore();
+        // PizzaStore chicagoStore = new ChicagoPizzaStore();
 
-        String[] types = { "cheese", "clam", "veggie", "cheese", "pepperoni" };
+        // String[] types = { "cheese", "clam", "veggie", "cheese", "pepperoni" };
 
-        for (int i = 0; i < types.length; i++) {
-            nyStore.orderPizza(types[i]);
-            chicagoStore.orderPizza(types[i]);
-        }
+        nyStore.orderPizza("veggie");
+        
        
     }
 }
